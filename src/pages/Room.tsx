@@ -3,16 +3,16 @@ import { useParams } from 'react-router-dom';
 import { useAuth } from '../Hooks/useAuth';
 
 import logoImg from '../assets/images/logo.svg';
-import { Button } from '../components/Button';
-import { RoomCode } from '../components/RoomCode';
-import { Question } from '../components/Question';
+import { Button } from '../components/Button/index';
+import { RoomCode } from '../components/Room-code/index';
+import { Question } from '../components/Question/index';
 
 import { FormEvent } from 'react';
 import { database } from '../services/firebase';
 import { useEffect } from 'react';
 
 import '../styles/rooms.scss';
-import '../styles/question.scss';
+import '../components/Question/styles.scss';
 
 type FirebaseQuestions = Record<string, {
   author: {
