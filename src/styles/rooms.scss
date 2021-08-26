@@ -10,6 +10,17 @@
       justify-content: space-between;
       align-items: center;
 
+      > div {
+        display: flex;
+
+        button {
+          height: 40px;
+        }
+
+      //Propriedade para sobrepor espaçamentos em páginas já estilizadas
+        gap: 16px;
+      }
+
       > img {
         max-height: 45px;
       }
